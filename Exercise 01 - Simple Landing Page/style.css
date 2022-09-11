@@ -74,7 +74,48 @@ body{
 /*                                                 NavBar Completed                                                            */
 /*******************************************************************************************************************************/
 
+.section-one{
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+}
+.section-one-left{
+    width: 50%;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
 
+.section-one-left-heading{
+    font-size: 48px;
+}
+
+.section-one-left-text{
+    width: 80%;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-one-left .email-us .enter-email{
+    width: 270px;
+    padding: 10px 5px;
+}
+
+.section-one-right{
+    width: 50%;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-one-right img{
+    width: 100%;
+}
 
 
 

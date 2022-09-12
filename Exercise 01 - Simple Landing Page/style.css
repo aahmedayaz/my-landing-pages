@@ -61,8 +61,21 @@ body{
 .main-header .nav-bar ul li a{
     text-decoration: none;
     color: inherit;
-    transition: all 0.3s linear;
 }
+
+.main-header .nav-bar ul li a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: all .3s linear;
+}
+
+.main-header .nav-bar ul li a:hover::after{
+    width: 100%;
+}
+
 
 .main-header .nav-bar ul li:nth-of-type(1){
     margin-left: auto;

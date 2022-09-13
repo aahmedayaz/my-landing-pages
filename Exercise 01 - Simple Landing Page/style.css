@@ -15,12 +15,18 @@ body{
 .header{
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .main-header{
     display: flex;
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     height: 70px;
 }
 
@@ -33,7 +39,7 @@ body{
 }
 
 .main-header img{
-    width: auto;
+    width: auto ;
     padding: 10px;
     cursor: pointer;
 }
@@ -90,6 +96,7 @@ body{
 
 .section-one{
     width: 100%;
+    margin-top: 70px;
     height: calc(100vh - 70px);
     display: flex;
 }
@@ -123,15 +130,20 @@ body{
     width: 70px;
     font-weight: bold;
     border-radius: 15px;
-    margin-left: 5px;
-    box-shadow: inset 0 0 0 0 rgb(63, 61, 86);
+    margin-left: 8px;
+    color: white;
+    border: none;
+    background-color: rgb(63, 61, 86);
     transition: all 0.3s linear ;
+    cursor: pointer;
 }
 
 .section-one-left .email-us .btn-apply:hover{
     border: none;
-    color: white;
-    box-shadow: inset 70px 0 0 0 rgb(63, 61, 86);
+    border: 3px solid rgb(63, 61, 86);
+    font-weight: bolder;
+    transform: translateY(-2px);
+    transform: scale(1.05);
 }
 
 
@@ -164,10 +176,150 @@ body{
 }
 
 .section-one-right img{
-    width: 100%;
+    width: 80%;
 }
 
+.see-more{
+    position: absolute;
+    left: 44.5%;
+    bottom: 10%;
+    width: 150px;
+    padding: 7px 20px;
+    border: 2px solid black;
+    border-radius: 35px;
+    box-shadow: inset 0 0 0 0 rgb(63, 61, 86);
+    cursor: pointer;
+    transition: all ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    animation: animate 3s ease infinite;
+}
 
+@keyframes animate {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.see-more span{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.see-more:hover {
+    color: white;
+    border: transparent;
+    box-shadow: inset 152px 0 0 1px rgb(63, 61, 86);
+}
+
+/*******************************************************************************************************************************/
+/*                                            Section-One Completed                                                            */
+/*******************************************************************************************************************************/
+
+
+.section-two{
+    height: calc(100vh - 70px);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-two h1{
+    text-align: center;
+    color: rgb(89, 0, 124);
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.section-two-area{
+    width: 100%;
+    height: 100%;
+}
+
+.card-area-one , .card-area-two{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.cards{
+    height: 90%;
+    border: none;
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.cards:hover{
+    transform: scale(1.1);
+}
+
+.cards i{
+    color: #000;
+    font-size: 3em;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 1s linear;
+}
+
+.cards i:hover{
+    transform: rotate(360deg);
+}
+
+.cards .card-heading{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.cards .introOfSkill{
+    font-weight: 700;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.card-area-one .cards:nth-of-type(1){
+    background-color: #EB1D36;
+}
+.card-area-one .cards:nth-of-type(2){
+    background-color: #FFDE00;
+}
+.card-area-one .cards:nth-of-type(3){
+    background-color: #C3F8FF;
+}
+
+.card-area-two .cards:nth-of-type(1){
+    background-color: #3D8361;
+}
+.card-area-two .cards:nth-of-type(2){
+    background-color: #dddddd;
+}
+.card-area-two .cards:nth-of-type(3){
+    background-color: #0F3460;
+}
 
 
 
